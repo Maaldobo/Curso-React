@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link
+      rel="stylesheet"
+      href="https://codefornoncoders.com/material/html/formularios/formularios.css"
+    />
+</head>
+<body>
+    <fieldset>
+        <form method="post" action="/pagina.html">
+            <label for="txtNombre">Nombre</label>
+                <input 
+                    type="text"
+                    name="txtNombre"
+                    id="txtNombre"
+                    placeholder="Max Powers"
+                    required
+                />
+
+                <label for="intEdad">Edad</label>
+                <input 
+                    type="number"
+                    name="intEdad"
+                    id="intEdad"
+                    placeholder="ingresa tu edad"
+                    required
+                />
+
+                <label for="intTelefono">Teléfono</label>
+                <input 
+                    type="tel"
+                    name="intTel"
+                    id="intTel"
+                    pattern="[0-9]{9}"
+                    required
+                    placeholder="5555555555"
+                />
+
+                <label for="intEdad">Edad</label>
+                <input 
+                    type="number"
+                    name="intEdad"
+                    id="intEdad"
+                />
+
+
+                <label for="texComida">Mensaje</label>
+                    <input 
+                    id="txtComida"
+                    name="txtComida"
+                    placeholder="Chilaquiles"
+                />
+        </form>
+
+    </fieldset>
+    <fieldset>
+        <form method="post" action="/pagina.html">
+            <label for="txtHobby">Hobby</label>
+                <datalist id="txtHobby">
+                    <option value="Videojuegos"></option>
+                    <option value="Futbol"></option>
+                    <option value="Acampar"></option>
+                    <option value="Dormir"></option>
+                    <option value="otro"></option>
+
+                </datalist>
+               <input list="txthobby"/>     
+               
+
+
+                <label for="intTelefono">Teléfono</label>
+                <input 
+                    type="tel"
+                    name="intTel"
+                    id="intTel"
+                    pattern="[0-9]{9}"
+                    required
+                    placeholder="5555555555"
+                />
+
+                <label for="intEdad">Edad</label>
+                <input 
+                    type="number"
+                    name="intEdad"
+                    id="intEdad"
+                />
+
+
+                <label for="Mensaje">Mensaje</label>
+                    <textarea 
+                    id="txtMensaje"
+                    name="txtMensaje"
+                    rows="5"
+                    placeholder="Escribe sobre ti"
+                    ></textarea>
+                    
+                        
+                   
+                    
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+        </form>
+
+    </fieldset>
+</body>
+</html>
