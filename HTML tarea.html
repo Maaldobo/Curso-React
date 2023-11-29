@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTM TAREA</title>
+    <title>HTML TAREA</title>
     <style>
         table {
           width: 100%;
@@ -13,20 +13,64 @@
   
         th,
         td {
-          border: 1px solid #ddd;
+          border: 3px solid #ddd;
           padding: 12px;
           text-align: left;
         }
-      </style>
+    </style>
 </head>
 <body>
     <table> 
-        <thead>Horario</thead>
-        <thead>Lunes</thead>
-        <thead>Martes</thead>
-        <thead>Miércoles</thead>
-        <thead>Jueves</thead>
-        <thead>Viernes</thead>
+        <thead>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </thead>
+
+        <tr>
+            <td>8:00-9:00</td>
+            <td rowspan="2"; style="background-color: red"><strong>Matematicas</strong></td>
+            <td style="background-color: maroon;"><strong>Lengua</strong></td>
+            <td><strong>Música</strong></td>
+            <td></td>
+            <td rowspan="2"><strong>Matematicas</strong></td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td><strong>Inglés</strong></td>
+            <td><strong>Inglés</strong></td>
+            <td style="background-color: pink;"><strong>E. Física</strong></td>
+        </tr>
+        <tr>
+            <td>10:00-10:30</td>
+            <td colspan="5"; style="background-color: green;"><strong>Recreo</strong></td>
+        </tr>
+        <tr>
+            <td>10:30-11:30</td>
+            <td style="background-color: pink;"><strong>E. Física</strong></td>
+            <td><strong>Valenciano</strong></td>
+            <td rowspan="2" style="background-color: maroon;"><strong>Lengua</strong></td>
+            <td style="background-color: yellow;"><strong>Informática</strong></td>
+            <td><strong>Inglés</strong></td>
+        </tr>
+        <tr>
+            <td>12:30-13:30</td>
+            <td><strong>Música</strong></td>
+            <td style="background-color: pink;"><strong>E. Física</strong></td>
+            <td rowspan="2"; style="background-color: red;"><strong>Matemáticas</strong></td>
+            <td style="background-color: yellow;"><strong>Informática</strong></td>
+        </tr>
+        <tr>
+            <td>13:30-14:30</td>
+            <td></td>
+            <td style="background-color: yellow;"><strong>Informática</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+
     </table>
 </body>
 </html>
