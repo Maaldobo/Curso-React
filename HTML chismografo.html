@@ -50,8 +50,9 @@
 
     </fieldset>
     <fieldset>
+        
         <form method="post" action="/pagina2.html">
-            
+            <label for="txtHobby">Hobbies</label>
                 <datalist id="txtHobby">
                     <option value="Videojuegos"></option>
                     <option value="Futbol"></option>
@@ -60,36 +61,16 @@
                     <option value="Otro"></option>
 
                 </datalist>
-                <input list="txtHobby"/>     
+                <input list="txtHobby" id="txtHobby" name="txtHobby"/>     
                
 
+                <label>Historia Curiosa</label>
+                <textarea for="txtHistoria"
+                rows="5">
 
-                <label for="intTelefono">Teléfono</label>
-                <input 
-                    type="tel"
-                    name="intTel"
-                    id="intTel"
-                    pattern="[0-9]{9}"
-                    required
-                    placeholder="5555555555"
-                />
+                </textarea>
+                
 
-                <label for="intEdad">Edad</label>
-                <input 
-                    type="number"
-                    name="intEdad"
-                    id="intEdad"
-                />
-
-
-                <label for="Mensaje">Mensaje</label>
-                    <textarea 
-                    id="txtMensaje"
-                    name="txtMensaje"
-                    rows="5"
-                    placeholder="Escribe sobre ti"
-                    ></textarea>
-                    
                         
                    
                     
