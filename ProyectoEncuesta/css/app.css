@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    font-size: small;
+}
+
+main {
+    margin: 0 auto;
+    width: 450px;
+    background-color: rgb(55, 105, 117);
+}
+textarea{
+    width: 100%;
+}
+fieldset{
+    border: 1px dotted rgb(92, 148, 180);
+    
+    
+}
+fieldset section{
+    padding: 10px;
+}
+footer{
+    margin-top: 5px;
+    text-align: right;
+}
+
+legend{
+    font-style: italic;
+    
+}
+#scResultados {
+    margin: 0 auto;
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 3px;
+
+}
+
+.error{
+    border: 1px dashed red;
+    color: red;
+}
+
+.exito{
+    border: 1px dashed green;
+    color: green;
+}
