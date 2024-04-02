@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        /* Estilo para el contenedor de la carcasa */
+        .carcasa {
+            background-color: #333; /* Color de fondo de la carcasa */
+            border: 10px solid #888; /* Borde metálico */
+            padding: 20px; /* Espacio interno */
+            width: 300px; /* Ancho del marcador (ajusta según tus necesidades) */
+            height: 150px; /* Altura del marcador (ajusta según tus necesidades) */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilo para el display */
+        .display {
+            background-color: black; /* Color de fondo del display */
+            color: white; /* Color del texto */
+            font-size: 24px; /* Tamaño de fuente (ajusta según tus necesidades) */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            padding: 10px; /* Espacio interno */
+            width: 50%; /* Ancho del display (ajusta según tus necesidades) */
+            text-align: center;
+        }
+
+        /* Estilo para los números (cada dígito representado con 7 líneas) */
+        .numero {
+            display: inline-block;
+            margin: 5px;
+            height: 20px;
+            width: 2px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carcasa">
+                    <div class="display">
+                        <span class="numero"></span>
+                        <span class="numero"></span>
+                        <span class="numero"></span>
+                        <span class="numero"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para actualizar los números en el display
+        function updateNumbers(numbers) {
+            const digitElements = document.querySelectorAll('.numero');
+            const digits = numbers.split(':');
+
+            digitElements.forEach((element, index) => {
+                element.textContent = digits[index];
+            });
+        }
+
+        // Ejemplo de uso:
+        updateNumbers('99:34');
+    </script>
+</body>
+</html>
